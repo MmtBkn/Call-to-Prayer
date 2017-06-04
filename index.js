@@ -3,7 +3,7 @@
 const Alexa = require('alexa-sdk');
 
 //audio file
-const adhanFile = "https://firebasestorage.googleapis.com/v0/b/selam-81642.appspot.com/o/goodmorning.mp3?alt=media";
+const adhanFile = "https://firebasestorage.googleapis.com/v0/b/selam-81642.appspot.com/o/adhan.mp3?alt=media";
 
 exports.handler = function (event, context) {
     const alexa = Alexa.handler(event, context);
