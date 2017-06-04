@@ -13,7 +13,7 @@ https://github.com/alexa/skill-sample-nodejs-audio-player
 # Test
 If you don't have Echo device, test your skill using `https://echosim.io/`
 
-#Troubleshooting
+# Troubleshooting
 If mp3 is not served over https, It doesn't work. I uploaded file to Firebase.
 
 1st and 2nd steps could be hard to figure out. I don't know when, but I'm planning to write blog post. You can email me to encourage.
