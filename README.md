@@ -1,5 +1,7 @@
-# Call-to-Prayer
-Alexa skill which is calling Adhan when summoned.
+# Call to Prayer
+Simple Alexa skill which is calling Adhan when summoned. It could be used to play sound, music files. If you need more than playing single sound, check out;
+https://github.com/alexa/skill-sample-nodejs-audio-player
+
 #Usage
 1. Create AWS Lambda function
 2. Create alexa skill, (and connect it to lambda function)
@@ -11,4 +13,7 @@ Alexa skill which is calling Adhan when summoned.
 # Test
 If you don't have Echo device, test your skill using `https://echosim.io/`
 
+#Troubleshooting
+If mp3 is not served over https, It doesn't work.
 
+1st and 2nd steps could be hard to figure out. I'm planning to write blog post. You can email me to encourage.
