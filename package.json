@@ -1,0 +1,20 @@
+{
+  "name": "Call to Prayer",
+  "version": "1.0.0",
+  "description": "Skill for Alexa",
+  "readme": "Call to prayer skill for Alexa",
+  "repository": "Call to Prayer",
+  "main": "index.js",
+  "scripts": {
+    "invoke": "aws lambda invoke --function-name 'itsTimeToPray' --payload fileb://../tests/events/alexa-start-session.json ../tests/out.txt && cat ../tests/out.txt",
+    "test": "node ../tests/test.js",
+    "deploy": "npm run zip && npm run upload && rm ../index.zip",
+    "upload": "aws lambda update-function-code --function-name 'itsTimeToPray' --zip-file fileb://../index.zip",
+    "zip": "zip -r ../index.zip . -x 'package.json' -x '*.git*' "
+  },
+  "author": "Muhammet Bakan",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "alexa-sdk": "^1.0.9"
+  }
+}
