@@ -2,7 +2,7 @@
 Simple Alexa skill which is calling Adhan when summoned. It could be used to play sound, music files. If you need more than playing single sound, check out;
 https://github.com/alexa/skill-sample-nodejs-audio-player
 
-#Usage
+# Usage
 1. Create AWS Lambda function
 2. Create alexa skill, (and connect it to lambda function)
 3. Download this repository
